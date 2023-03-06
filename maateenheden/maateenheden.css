@@ -1,0 +1,48 @@
+     body {
+/*        font-size: 5vw;  */
+/*        font-size: 60px;  */
+/*        font-size: .5em; */
+      }
+
+      #wrapper p {
+         font-size: 2em;
+      }
+      #wrapper {
+/*font-size: .5em;*/
+         background-color: aquamarine;
+         padding: 1rem;
+         margin: 1rem;
+      }
+      .box {
+         background-color: blueviolet;
+         width: 1em;
+         height: 1em;
+         display: inline-table;
+      }
+      .rembox {
+         background-color: bisque;
+         width: 1rem;
+         height: 1rem;
+         display: inline-flex;
+      }
+      #factor {
+        border: 1px solid grey;
+        display: inline-block;
+        width: 2em;
+      }
+      .pxBox{
+        top: 50px;
+        left:50px; 
+        position:absolute;
+        position:fixed;
+        position:sticky;
+        position: relative;
+        position: static; 
+        width:100px; 
+        height:100px; 
+        background:black; 
+        color:white; 
+        font-weight:bold; 
+        box-sizing:border-box; 
+        padding: 10px;
+      }

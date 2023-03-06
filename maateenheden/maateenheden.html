@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experimenteer met em's</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amsterdam Tech Academy">
+    <link rel="stylesheet" href="maateenheden.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<p>Em is een relatieve lengtemaat ten opzichte van de grootte van het font.
+Met deze paragraaf doe ik niks.</p>
+<p>Bekijk de elementen als de wrapper-div en deze paragraaf <em>ook</em> met de inspector van je webbrowser</p>
+<div id="wrapper">
+   Experimenteer met em's. <br>
+   De 'wrapper-div' heeft een mint-groene achtergrond.
+   <p>Deze paragraaf zit in de wrapper-div. In de stijl heeft deze <em>paragraaf</em> een font-size van 2em gekregen.</p>
+   <div class="box"></div> Deze box heeft een breedte en hoogte van 1em. <br>
+   <div class="rembox"></div> Deze box heeft een breedte en hoogte van 1rem.
+
+   <div>
+     <label for="wrpr">Fontsize in em's van de div met id wrapper:</label> <span id="factor"></span>
+     <input type="range" id="wrpr" min="0.1" max="3" value="1.0" step="0.1">
+<br>
+     <button id="herstel">Herstel fontsize #wrapper: 1em</button>
+   </div>
+</div>
+<div class="box"></div> Met deze tekst ga ik niks doen. Het blauw-violette vakje meet 1em bij 1em. <br>
+1 e<span style="background-color: aquamarine;">m</span> staat voor de grootte van het font waar je op dat moment mee werkt. 2em betekent dus 2 keer de huidige fontgrootte. <br>
+Dat kan op verschillende plekken dus verschillende waarden hebben.
+<br>
+<div class="rembox"></div> Deze box meet 1rem hoog en breed.
+<!-- <div style="top: 50px;left:50px; position:absolute;position:fixed;position:sticky;position: relative;position: static; width:100px; height:100px; background:black; color:white; font-weight:bold; box-sizing:border-box; padding: 10px">100px bij 100px</div> -->
+<div class="pxBox">100px bij 100px</div>
+<footer>
+    <fieldset>
+        <legend>Geef het font van de body een grootte</legend>
+        <input type="radio" name="sizebody" id="standaard" value=""><label for="standaard">standaardwaarde</label><br>
+        <input type="radio" name="sizebody" id="px12" value="12px"><label for="px12">12px</label><br>
+        <input type="radio" name="sizebody" id="px16" value="16px"><label for="px16">16px</label><br>
+        <input type="radio" name="sizebody" id="px20" value="20px"><label for="px20">20px</label><br>
+        <input type="radio" name="sizebody" id="vw" value="5vw"><label for="vw">5vw</label><br>
+        <input type="radio" name="sizebody" id="vh" value="3vh"><label for="vh">3vh</label><br>
+        <input type="radio" name="sizebody" id="em" value=".5em"><label for="em">.5em</label><br>
+        <input type="radio" name="sizebody" id="perc" value="75%"><label for="perc">75%</label><br>
+        <button id="bodyGrootte">Pas de font-size van de body aan</button>
+        <br>
+    </fieldset>
+  </footer>  
+</body>
+</html>
