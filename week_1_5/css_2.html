@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>css 2 </title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        .wrapper {
+            font-size: 0.8em;
+            border: 1px solid black;
+        }            
+        .box{
+            border: 2px solid magenta;
+            margin: 5px;
+            padding: 5px;
+        }    
+        .px {
+            width: 200px;
+        }
+        .vw {
+            width: 60vw;
+        }
+        .em {
+            width: 10em;
+        }
+    </style>
+  </head>
+  <body>
+    Bron:<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Values and units in CSS</a>
+
+    <h3>Breedte: px (absoluut) vw (relatief) em (relatief)</h3>
+    
+    <div class="wrapper">
+        <div class="box px">I am 200px wide.<br><br>  Width set in pixels. As an absolute unit, this width will remain the same no matter what else changes.            
+        </div>
+    
+        <div class="box vw">I am 100vw wide.<br><br>  Width set in vw (viewport width) units. This value is relative to the viewport width, and so 60vw is 60 percent of the width of the viewport. If you change the width of your browser window, the size of the box should change.            
+        </div>
+    
+        <div class="box em">I am 10em wide.<br><br>  Width em units. These are relative to the font size. I've set a font size of 1em on the containing <div>, which has a class of .wrapper. Change this value to 1.5em and you will see that the font size of all the elements increases, but only the last item will get wider, as its width is relative to that font size.            
+        </div>
+    </div>
+  </body>
+</html>

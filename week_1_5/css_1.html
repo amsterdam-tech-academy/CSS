@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Em Rem </title>
+    <style>
+    html {
+        font-size: 20px;
+        }
+
+    .ems li {
+        font-size: 1.3em;
+        color: red;
+        }
+
+    .rems li {
+        font-size: 1.3rem;
+        color: purple;
+        }
+    
+    .different{
+        font-size: 10px;
+        color: black;
+        background-color: rgb(170, 185, 185);
+    }
+    </style>
+  </head>
+  <body>
+    Bron:<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Values and units in CSS</a>
+    <ul class="ems">
+        <li>em One</li>
+        <li>em Two</li>
+        <li>em Three
+            <ul>
+            <li>em Three A</li>
+            <li>em Three B
+                <ul>
+                    <li>em Three B 2</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+    </ul>
+      
+    <ul class="rems">
+        <li>rem One</li>
+        <li>rem Two</li>
+        <li>rem Three
+            <ul>
+            <li>rem Three A</li>
+            <li>rem Three B
+                <ul>
+                    <li>rem Three B 2</li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="different">
+        <ul class="ems">
+            <li>em One</li>
+            <li>em Two</li>
+            <li>em Three
+                <ul>
+                <li>em Three A</li>
+                <li>em Three B
+                    <ul>
+                        <li>em Three B 2</li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+        </ul>
+          
+        <ul class="rems">
+            <li>rem One</li>
+            <li>rem Two</li>
+            <li>rem Three
+                <ul>
+                <li>rem Three A</li>
+                <li>rem Three B
+                    <ul>
+                        <li>rem Three B 2</li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </body>
+</html>
